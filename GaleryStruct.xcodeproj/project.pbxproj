@@ -11,7 +11,6 @@
 		29C017901F0698A60070950A /* WorkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */; };
 		D0388C121EDCCE8D00190852 /* SearchMethodsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */; };
 		D06363211ED9ABFA009CF372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06363201ED9ABFA009CF372 /* AppDelegate.swift */; };
-		D06363231ED9ABFA009CF372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06363221ED9ABFA009CF372 /* ViewController.swift */; };
 		D063632B1ED9ABFA009CF372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06363291ED9ABFA009CF372 /* LaunchScreen.storyboard */; };
 		D06536B01EE3EAED000836AA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06536AF1EE3EAED000836AA /* LoadingViewController.swift */; };
 		D06536B31EE3EE41000836AA /* ExhibitionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06536B21EE3EE41000836AA /* ExhibitionsModel.swift */; };
@@ -21,11 +20,6 @@
 		D0852B811EFA7F9400DC589B /* ExhibitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852B801EFA7F9400DC589B /* ExhibitTableViewCell.swift */; };
 		D08D0CD11EF3B69700742954 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08D0CD01EF3B69700742954 /* Slide.xib */; };
 		D08D0CD31EF3B6B000742954 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08D0CD21EF3B6B000742954 /* Slide.swift */; };
-		D096C5AC1EDC6B8500CBE637 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096C5AB1EDC6B8500CBE637 /* Places.swift */; };
-		D096C5AE1EDC6BC300CBE637 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096C5AD1EDC6BC300CBE637 /* Event.swift */; };
-		D096C5B01EDC6C1000CBE637 /* Adress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096C5AF1EDC6C1000CBE637 /* Adress.swift */; };
-		D096C5B21EDC6C3C00CBE637 /* Works.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096C5B11EDC6C3C00CBE637 /* Works.swift */; };
-		D096C5B41EDC6C5300CBE637 /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096C5B31EDC6C5300CBE637 /* Persons.swift */; };
 		D0A039FA1EFC3D8E0031191C /* ExhibitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A039F91EFC3D8E0031191C /* ExhibitionsViewController.swift */; };
 		D0A056051EFE89A700880424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A056041EFE89A700880424 /* Assets.xcassets */; };
 		D0B14A211EDF2C5700074176 /* ExibitionVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B14A201EDF2C5700074176 /* ExibitionVO.swift */; };
@@ -42,7 +36,6 @@
 		D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMethodsProtocol.swift; path = ../SearchMethodsProtocol.swift; sourceTree = "<group>"; };
 		D063631D1ED9ABFA009CF372 /* GaleryStruct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaleryStruct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06363201ED9ABFA009CF372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D06363221ED9ABFA009CF372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D063632A1ED9ABFA009CF372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D063632C1ED9ABFA009CF372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D06536AF1EE3EAED000836AA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -53,11 +46,6 @@
 		D0852B801EFA7F9400DC589B /* ExhibitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhibitTableViewCell.swift; sourceTree = "<group>"; };
 		D08D0CD01EF3B69700742954 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		D08D0CD21EF3B6B000742954 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		D096C5AB1EDC6B8500CBE637 /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Places.swift; path = ../Places.swift; sourceTree = "<group>"; };
-		D096C5AD1EDC6BC300CBE637 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		D096C5AF1EDC6C1000CBE637 /* Adress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adress.swift; sourceTree = "<group>"; };
-		D096C5B11EDC6C3C00CBE637 /* Works.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Works.swift; sourceTree = "<group>"; };
-		D096C5B31EDC6C5300CBE637 /* Persons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
 		D0A039F91EFC3D8E0031191C /* ExhibitionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhibitionsViewController.swift; sourceTree = "<group>"; };
 		D0A056041EFE89A700880424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D0B14A201EDF2C5700074176 /* ExibitionVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExibitionVO.swift; sourceTree = "<group>"; };
@@ -132,9 +120,9 @@
 			children = (
 				D08D0CCD1EF3B5F800742954 /* View */,
 				D06536AF1EE3EAED000836AA /* LoadingViewController.swift */,
+				D06536B61EE40243000836AA /* ExhibitionsDetailsViewController.swift */,
 				D0A039F91EFC3D8E0031191C /* ExhibitionsViewController.swift */,
 				D0852B801EFA7F9400DC589B /* ExhibitTableViewCell.swift */,
-				D06536B61EE40243000836AA /* ExhibitionsDetailsViewController.swift */,
 				29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */,
 				293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */,
 				D06536BA1EE41B96000836AA /* Main.storyboard */,
@@ -189,12 +177,6 @@
 				D0A056041EFE89A700880424 /* Assets.xcassets */,
 				D063632C1ED9ABFA009CF372 /* Info.plist */,
 				D06363201ED9ABFA009CF372 /* AppDelegate.swift */,
-				D06363221ED9ABFA009CF372 /* ViewController.swift */,
-				D096C5AB1EDC6B8500CBE637 /* Places.swift */,
-				D096C5B31EDC6C5300CBE637 /* Persons.swift */,
-				D096C5B11EDC6C3C00CBE637 /* Works.swift */,
-				D096C5AF1EDC6C1000CBE637 /* Adress.swift */,
-				D096C5AD1EDC6BC300CBE637 /* Event.swift */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -325,22 +307,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A039FA1EFC3D8E0031191C /* ExhibitionsViewController.swift in Sources */,
-				D096C5AE1EDC6BC300CBE637 /* Event.swift in Sources */,
 				D0388C121EDCCE8D00190852 /* SearchMethodsProtocol.swift in Sources */,
 				D0B14A2C1EDF3F1000074176 /* GalleryVO.swift in Sources */,
-				D096C5B41EDC6C5300CBE637 /* Persons.swift in Sources */,
-				D06363231ED9ABFA009CF372 /* ViewController.swift in Sources */,
 				293D9CD51F08122A003C0A92 /* MuCollectionViewCell.swift in Sources */,
 				D0B14A211EDF2C5700074176 /* ExibitionVO.swift in Sources */,
 				D08D0CD31EF3B6B000742954 /* Slide.swift in Sources */,
-				D096C5B21EDC6C3C00CBE637 /* Works.swift in Sources */,
 				29C017901F0698A60070950A /* WorkDetailsViewController.swift in Sources */,
 				D06536B31EE3EE41000836AA /* ExhibitionsModel.swift in Sources */,
 				D0852B811EFA7F9400DC589B /* ExhibitTableViewCell.swift in Sources */,
 				D06363211ED9ABFA009CF372 /* AppDelegate.swift in Sources */,
-				D096C5B01EDC6C1000CBE637 /* Adress.swift in Sources */,
 				D06536B71EE40243000836AA /* ExhibitionsDetailsViewController.swift in Sources */,
-				D096C5AC1EDC6B8500CBE637 /* Places.swift in Sources */,
 				D06536B01EE3EAED000836AA /* LoadingViewController.swift in Sources */,
 				D0D17DD21EE1976800749F37 /* WorksVO.swift in Sources */,
 				D08357CA1EFDA3FF00DF31D2 /* alamofireDownloadJSON.swift in Sources */,

@@ -115,10 +115,10 @@
                                 <rect key="frame" x="0.0" y="49" width="375" height="901"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65w-LJ-nn9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="810"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1185"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Tr-oB-efx">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="810"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1185"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlc-O5-BbV">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
@@ -383,7 +383,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7PP-yl-LqA">
-                                                        <rect key="frame" x="0.0" y="754" width="375" height="56"/>
+                                                        <rect key="frame" x="0.0" y="754" width="375" height="431"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyr-ut-F5F">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="23"/>
@@ -398,6 +398,12 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
+                                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jo6-iQ-r5Y">
+                                                                <rect key="frame" x="0.0" y="56" width="375" height="375"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="375" id="2KT-YH-cwE"/>
+                                                                </constraints>
+                                                            </mapView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -472,6 +478,7 @@
                         <outlet property="likeButton" destination="fYF-rt-PVO" id="ILn-WO-MRH"/>
                         <outlet property="links" destination="gch-gH-LSj" id="kW5-mj-cl5"/>
                         <outlet property="mainStackView" destination="5Tr-oB-efx" id="MPI-to-Nby"/>
+                        <outlet property="mapView" destination="Jo6-iQ-r5Y" id="GFB-TX-U90"/>
                         <outlet property="myCollectionView" destination="pji-TS-XZm" id="WOv-Jr-U6Z"/>
                         <outlet property="phone" destination="NEa-x2-aaL" id="gJu-j9-YJL"/>
                         <outlet property="scheduleLabel" destination="p2h-qz-RxM" id="zQe-BU-JMZ"/>

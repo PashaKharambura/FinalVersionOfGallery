@@ -1,5 +1,6 @@
 import Foundation
 import ObjectMapper
+import MapKit
 
 struct GalleryVO {
     var id:String!
@@ -12,8 +13,8 @@ struct GalleryVO {
     var galleryLogo: URL?
     var link: String?
     var phone: String?
-    var latitude: Double?
-    var longitude: Double?
+    var latitude: NSString?
+    var longitude: NSString?
     var schedule: [String]?
 }
 

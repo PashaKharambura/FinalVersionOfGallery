@@ -1,6 +1,6 @@
 import UIKit
 import SDWebImage
-
+import MapKit
 
 class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -27,6 +27,7 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
  
     @IBOutlet weak var likeButton: UIBarButtonItem!
     
+    @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var mainStackView: UIStackView!
@@ -41,6 +42,18 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         myCollectionView.dataSource = self
         
         mainStackView.subviews[2].isHidden = true
+        
+        print("Long: \(exhibitionData.gallery?.longitude ?? "gavno")")
+        print("Lat: \(exhibitionData.gallery?.latitude ?? "gavno")")
+        
+        var  initialLocation = CLLocation(latitude: 0.0, longitude: 0.0)
+        
+        if let galleryLongitude = (exhibitionData.gallery?.longitude)?.doubleValue {
+            if let galleryLatitude = (exhibitionData.gallery?.latitude)?.doubleValue {
+                initialLocation = CLLocation(latitude: galleryLatitude, longitude: galleryLongitude)
+            }
+        }
+        centerMapOnLocation(location: initialLocation)
         
         titleLabel.text = exhibitionData.gallery?.name
         authorLabel.text = exhibitionData.authourName
@@ -60,7 +73,12 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         
     }
     
-    
+    let regionRadius: CLLocationDistance = 500
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: false)
+    }
     
     @IBAction func likeAction(_ sender: UIBarButtonItem) {
         if likePressed == false {

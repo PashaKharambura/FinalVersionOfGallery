@@ -9,13 +9,7 @@
 import Foundation
 
 protocol SearchMethods {
-    
-    func OpenedEvent(mass: [Event]) -> [Event]
-    
-    func ClosingEvent(mass: [Event]) -> [Event]
-    
-    func WillBeOpenedEvent(mass: [Event]) -> [Event]
-    
+     
 }
 
 
