@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		293D9CD51F08122A003C0A92 /* MuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */; };
 		29C017901F0698A60070950A /* WorkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */; };
+		29DED7751F1CB2FC00F8EBE3 /* MapPointGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */; };
 		D0388C121EDCCE8D00190852 /* SearchMethodsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */; };
 		D06363211ED9ABFA009CF372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06363201ED9ABFA009CF372 /* AppDelegate.swift */; };
 		D063632B1ED9ABFA009CF372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06363291ED9ABFA009CF372 /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsViewController.swift; sourceTree = "<group>"; };
+		29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPointGallery.swift; path = ../../../MapPointGallery.swift; sourceTree = "<group>"; };
 		49A91034B3E042D006D914E1 /* Pods_GaleryStruct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaleryStruct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		655023E290FC6A11D7A2FFD5 /* Pods-GaleryStruct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaleryStruct.release.xcconfig"; path = "Pods/Target Support Files/Pods-GaleryStruct/Pods-GaleryStruct.release.xcconfig"; sourceTree = "<group>"; };
 		D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMethodsProtocol.swift; path = ../SearchMethodsProtocol.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				D0B14A201EDF2C5700074176 /* ExibitionVO.swift */,
 				D0B14A2B1EDF3F1000074176 /* GalleryVO.swift */,
 				D0D17DD11EE1976800749F37 /* WorksVO.swift */,
+				29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */,
 			);
 			name = VO;
 			path = GaleryStruct/API/VO;
@@ -316,6 +319,7 @@
 				D06536B31EE3EE41000836AA /* ExhibitionsModel.swift in Sources */,
 				D0852B811EFA7F9400DC589B /* ExhibitTableViewCell.swift in Sources */,
 				D06363211ED9ABFA009CF372 /* AppDelegate.swift in Sources */,
+				29DED7751F1CB2FC00F8EBE3 /* MapPointGallery.swift in Sources */,
 				D06536B71EE40243000836AA /* ExhibitionsDetailsViewController.swift in Sources */,
 				D06536B01EE3EAED000836AA /* LoadingViewController.swift in Sources */,
 				D0D17DD21EE1976800749F37 /* WorksVO.swift in Sources */,

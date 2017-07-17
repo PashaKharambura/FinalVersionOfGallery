@@ -14,25 +14,23 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
     @IBOutlet weak var showStackView: UIButton!
     @IBOutlet weak var scheduleLabel: UILabel!
     @IBOutlet weak var scheduleLabel2: UILabel!
-    
     @IBOutlet weak var galleryAdress: UILabel!
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var webAdress: UILabel!
     @IBOutlet weak var facebook: UILabel!
 
     @IBOutlet weak var texhAboutGallery: UITextView!
-
     @IBOutlet weak var textAboutExhibition: UITextView!
     @IBOutlet weak var textAboutArtists: UITextView!
     @IBOutlet weak var links: UITextView!
  
     @IBOutlet weak var likeButton: UIBarButtonItem!
-    
-    
-    @IBOutlet weak var mapView: MKMapView!
-    
+
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var mainStackView: UIStackView!
+    
+    @IBOutlet weak var mapView: MKMapView!
+
     public var exhibitionData: ExibitionVO!
     
     var likePressed = false
@@ -44,7 +42,6 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         myCollectionView.dataSource = self
         
         mainStackView.subviews[2].isHidden = true
-
         titleLabel.text = exhibitionData.gallery?.name
         authorLabel.text = exhibitionData.authourName
         datesLabel.text = String(describing: Date.from(string: exhibitionData.startDate?.iso)!).components(separatedBy: " ").first! + " - " + String(describing: Date.from(string: exhibitionData.endDate?.iso)!).components(separatedBy: " ").first!
@@ -60,17 +57,16 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         textAboutArtists.text = exhibitionData.authourDeskript
         links.text = exhibitionData.gallery?.link
         
-        var  initialLocation = CLLocation(latitude: 0.0, longitude: 0.0)
-        
         if let galleryLongitude = (exhibitionData.gallery?.longitude)?.doubleValue {
             if let galleryLatitude = (exhibitionData.gallery?.latitude)?.doubleValue {
-                initialLocation = CLLocation(latitude: galleryLatitude, longitude: galleryLongitude)
+                let initialLocation = CLLocation(latitude: galleryLatitude, longitude: galleryLongitude)
+                let mapPoint = GalleryMapPoint(title: exhibitionData.gallery?.name, coordinate: CLLocationCoordinate2D(latitude:galleryLatitude ,
+                                                                                                                   longitude: galleryLongitude))
+                mapView.addAnnotation(mapPoint)
+                centerMapOnLocation(location: initialLocation)
             }
         }
-        centerMapOnLocation(location: initialLocation)
-        
     }
-    
     
     @IBAction func likeAction(_ sender: UIBarButtonItem) {
         if likePressed == false {
@@ -83,14 +79,14 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
     }
     
     @IBAction func goBack(_ sender: UIBarButtonItem) {
-        
-        _ = navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     let regionRadius: CLLocationDistance = 500
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
+                                                                  regionRadius * 2.0,
+                                                                  regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: false)
     }
     
@@ -104,10 +100,8 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         }
     }
    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -120,7 +114,6 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
           return (exhibitionData.works?.count)!
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -128,16 +121,6 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         cell.imageInCollectionView.image = UIImage(named: "notAviable")
         return cell
     }
-    
-    //
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        let cell = sender as! UITableViewCell
-    //        let index = tableView.indexPath(for: cell)!
-    //        let exhibition = ExhibitionsModel.instance.exhibitions[index.row]
-    //        let destination = segue.destination as! ExhibitionsDetailsViewController
-    //        destination.exhibitionData = exhibition
-    //    }
-    //
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UICollectionViewCell
