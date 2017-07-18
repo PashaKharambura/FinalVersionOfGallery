@@ -10,6 +10,8 @@
 		293D9CD51F08122A003C0A92 /* MuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */; };
 		29C017901F0698A60070950A /* WorkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */; };
 		29DED7751F1CB2FC00F8EBE3 /* MapPointGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */; };
+		29DED7791F1E0A4000F8EBE3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DED7781F1E0A4000F8EBE3 /* SWRevealViewController.m */; };
+		29DED77C1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED77B1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift */; };
 		D0388C121EDCCE8D00190852 /* SearchMethodsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */; };
 		D06363211ED9ABFA009CF372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06363201ED9ABFA009CF372 /* AppDelegate.swift */; };
 		D063632B1ED9ABFA009CF372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06363291ED9ABFA009CF372 /* LaunchScreen.storyboard */; };
@@ -33,6 +35,10 @@
 		293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsViewController.swift; sourceTree = "<group>"; };
 		29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPointGallery.swift; path = ../../../MapPointGallery.swift; sourceTree = "<group>"; };
+		29DED7761F1E0A3F00F8EBE3 /* GaleryStruct-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GaleryStruct-Bridging-Header.h"; sourceTree = "<group>"; };
+		29DED7771F1E0A4000F8EBE3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		29DED7781F1E0A4000F8EBE3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		29DED77B1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMenuTableViewController.swift; sourceTree = "<group>"; };
 		49A91034B3E042D006D914E1 /* Pods_GaleryStruct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaleryStruct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		655023E290FC6A11D7A2FFD5 /* Pods-GaleryStruct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaleryStruct.release.xcconfig"; path = "Pods/Target Support Files/Pods-GaleryStruct/Pods-GaleryStruct.release.xcconfig"; sourceTree = "<group>"; };
 		D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMethodsProtocol.swift; path = ../SearchMethodsProtocol.swift; sourceTree = "<group>"; };
@@ -78,6 +84,17 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		29DED77A1F1E0A4A00F8EBE3 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				29DED7771F1E0A4000F8EBE3 /* SWRevealViewController.h */,
+				29DED7781F1E0A4000F8EBE3 /* SWRevealViewController.m */,
+				29DED7761F1E0A3F00F8EBE3 /* GaleryStruct-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			path = GaleryStruct;
+			sourceTree = "<group>";
+		};
 		2DCBAFF61B81C62FA9F04BD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +110,8 @@
 				D06536AE1EE3EA92000836AA /* ViewControllers */,
 				D0B14A1F1EDF2C1500074176 /* VO */,
 				D0B14A1E1EDF2BB600074176 /* API */,
-				D063631F1ED9ABFA009CF372 /* GaleryStruct */,
+				29DED77A1F1E0A4A00F8EBE3 /* SWRevealViewController */,
+				D063631F1ED9ABFA009CF372 /* smth another */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +124,7 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		D063631F1ED9ABFA009CF372 /* GaleryStruct */ = {
+		D063631F1ED9ABFA009CF372 /* smth another */ = {
 			isa = PBXGroup;
 			children = (
 				2DCBAFF61B81C62FA9F04BD8 /* Frameworks */,
@@ -114,6 +132,7 @@
 				D063631E1ED9ABFA009CF372 /* Products */,
 				D0B14A241EDF2E5C00074176 /* SupportingFiles */,
 			);
+			name = "smth another";
 			path = GaleryStruct;
 			sourceTree = "<group>";
 		};
@@ -122,12 +141,13 @@
 			children = (
 				D08D0CCD1EF3B5F800742954 /* View */,
 				D06536AF1EE3EAED000836AA /* LoadingViewController.swift */,
-				D06536B61EE40243000836AA /* ExhibitionsDetailsViewController.swift */,
+				D06536BA1EE41B96000836AA /* Main.storyboard */,
+				29DED77B1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift */,
 				D0A039F91EFC3D8E0031191C /* ExhibitionsViewController.swift */,
 				D0852B801EFA7F9400DC589B /* ExhibitTableViewCell.swift */,
+				D06536B61EE40243000836AA /* ExhibitionsDetailsViewController.swift */,
 				29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */,
 				293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */,
-				D06536BA1EE41B96000836AA /* Main.storyboard */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -220,6 +240,7 @@
 					D063631C1ED9ABFA009CF372 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7ZBZB7WTZS;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -311,6 +332,7 @@
 			files = (
 				D0A039FA1EFC3D8E0031191C /* ExhibitionsViewController.swift in Sources */,
 				D0388C121EDCCE8D00190852 /* SearchMethodsProtocol.swift in Sources */,
+				29DED77C1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift in Sources */,
 				D0B14A2C1EDF3F1000074176 /* GalleryVO.swift in Sources */,
 				293D9CD51F08122A003C0A92 /* MuCollectionViewCell.swift in Sources */,
 				D0B14A211EDF2C5700074176 /* ExibitionVO.swift in Sources */,
@@ -320,6 +342,7 @@
 				D0852B811EFA7F9400DC589B /* ExhibitTableViewCell.swift in Sources */,
 				D06363211ED9ABFA009CF372 /* AppDelegate.swift in Sources */,
 				29DED7751F1CB2FC00F8EBE3 /* MapPointGallery.swift in Sources */,
+				29DED7791F1E0A4000F8EBE3 /* SWRevealViewController.m in Sources */,
 				D06536B71EE40243000836AA /* ExhibitionsDetailsViewController.swift in Sources */,
 				D06536B01EE3EAED000836AA /* LoadingViewController.swift in Sources */,
 				D0D17DD21EE1976800749F37 /* WorksVO.swift in Sources */,
@@ -447,12 +470,15 @@
 			baseConfigurationReference = D3E612BED41865640A755981 /* Pods-GaleryStruct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = GaleryStruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pasha..GaleryStruct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GaleryStruct/GaleryStruct-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -462,12 +488,14 @@
 			baseConfigurationReference = 655023E290FC6A11D7A2FFD5 /* Pods-GaleryStruct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = GaleryStruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pasha..GaleryStruct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GaleryStruct/GaleryStruct-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

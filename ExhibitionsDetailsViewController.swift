@@ -2,6 +2,7 @@
 import UIKit
 import SDWebImage
 import MapKit
+import AddressBook
 
 class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -68,6 +69,14 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         }
     }
     
+    let regionRadius: CLLocationDistance = 500
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius * 2.0,
+                                                                  regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: false)
+    }
+    
     @IBAction func likeAction(_ sender: UIBarButtonItem) {
         if likePressed == false {
             likeButton.image = UIImage(named: "like_full")
@@ -82,13 +91,7 @@ class ExhibitionsDetailsViewController: UIViewController, UICollectionViewDelega
         navigationController?.popViewController(animated: true)
     }
     
-    let regionRadius: CLLocationDistance = 500
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0,
-                                                                  regionRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: false)
-    }
+    
     
     @IBAction func showDetails(_ sender: UIButton) {
         if  mainStackView.subviews[2].isHidden == true {

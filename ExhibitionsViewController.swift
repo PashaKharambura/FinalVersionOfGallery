@@ -12,6 +12,7 @@ import SDWebImage
 
 class ExhibitionsViewController : UIViewController, UITableViewDataSource, UITableViewDelegate{
 
+    @IBOutlet weak var menuButton: UIButton!
     @IBOutlet var blurView: UIView!
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     @IBOutlet weak var tableView: UITableView!
@@ -27,6 +28,12 @@ class ExhibitionsViewController : UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let revealViewController = self.revealViewController()
+        if revealViewController != nil {
+            menuButton.addTarget(revealViewController, action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+            self.view.addGestureRecognizer((revealViewController?.panGestureRecognizer())!)
+        }
+        
         ExhibitionsModel.instance.loadExhibitions(exhibitionsLoaded: tableView.reloadData)
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
