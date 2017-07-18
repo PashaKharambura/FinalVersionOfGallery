@@ -3,23 +3,64 @@ PODS:
   - AlamofireObjectMapper (4.1.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
-  - ObjectMapper (2.2.7)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FacebookShare (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKShareKit (~> 4.15)
+  - FBSDKCoreKit (4.22.1):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.22.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.22.1):
+    - FBSDKCoreKit
+  - ObjectMapper (2.2.8)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - AlamofireObjectMapper (~> 4.1)
+  - FacebookCore (~> 0.2)
+  - FacebookLogin (~> 0.2)
+  - FacebookShare (~> 0.2)
+  - FBSDKCoreKit (~> 4.22.1)
+  - FBSDKLoginKit (~> 4.22.1)
+  - FBSDKShareKit (~> 4.22.1)
   - ObjectMapper (~> 2.2)
   - SDWebImage (~> 4.0)
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
-  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FacebookShare: 8e9ee8ea06505e6a1d3d719b0cc63e840fb8aaeb
+  FBSDKCoreKit: 9c2daf0162214d6d2e21cf8208a9c6c2a2e42b9c
+  FBSDKLoginKit: 00cf28916b9f0169763a3d61985d745b579fe304
+  FBSDKShareKit: 1cbd0fdc2bb3277dd3522512855dcf1f4088f734
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 61721fb567e78e3771d0eb433f347514484424a9
+PODFILE CHECKSUM: 57ebe5f3d2cba3518879b80d25e7ffb6b602c242
 
 COCOAPODS: 1.2.1

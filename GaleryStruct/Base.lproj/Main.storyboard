@@ -52,7 +52,7 @@
                                 <color key="backgroundColor" red="0.18622771345264433" green="1" blue="0.015347977341081065" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login via facebook"/>
                                 <connections>
-                                    <segue destination="pWU-ZU-J31" kind="showDetail" id="UrA-Ht-q3k"/>
+                                    <action selector="fbLoginButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cV3-uj-rWD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxv-87-W75">
@@ -93,6 +93,7 @@
                         <outlet property="connectingButton" destination="FIY-aU-oPt" id="Ygo-tT-0Vn"/>
                         <outlet property="pageControl" destination="n57-C4-obn" id="uV6-aM-Sn9"/>
                         <outlet property="slideScrollView" destination="ZBD-HZ-ME7" id="We7-rm-9UE"/>
+                        <segue destination="pWU-ZU-J31" kind="showDetail" identifier="ClientView" id="OkS-Tf-D6y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -912,12 +913,12 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7A-dd-pAg">
-                                <rect key="frame" x="36" y="20" width="30" height="30"/>
+                                <rect key="frame" x="16" y="0.0" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GwI-2r-374"/>
                                     <constraint firstAttribute="width" constant="30" id="UQd-uA-Lbz"/>
                                 </constraints>
-                                <state key="normal" image="arrow">
+                                <state key="normal" image="home">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -944,8 +945,8 @@
                             <constraint firstItem="Uwn-iM-UCh" firstAttribute="height" secondItem="JaP-BD-nO1" secondAttribute="height" id="5c2-v7-q2Q"/>
                             <constraint firstItem="CBC-0I-GaA" firstAttribute="top" secondItem="JaP-BD-nO1" secondAttribute="top" constant="20" id="9cD-hP-5wz"/>
                             <constraint firstItem="CBC-0I-GaA" firstAttribute="centerX" secondItem="JaP-BD-nO1" secondAttribute="centerX" id="DGM-tn-QHk"/>
-                            <constraint firstItem="v7A-dd-pAg" firstAttribute="leading" secondItem="JaP-BD-nO1" secondAttribute="leadingMargin" constant="20" id="cea-aZ-ajY"/>
-                            <constraint firstItem="v7A-dd-pAg" firstAttribute="top" secondItem="zU5-Uk-gtH" secondAttribute="bottom" constant="20" id="gIJ-3y-087"/>
+                            <constraint firstItem="v7A-dd-pAg" firstAttribute="leading" secondItem="JaP-BD-nO1" secondAttribute="leadingMargin" id="cea-aZ-ajY"/>
+                            <constraint firstItem="v7A-dd-pAg" firstAttribute="top" secondItem="zU5-Uk-gtH" secondAttribute="bottom" id="gIJ-3y-087"/>
                             <constraint firstItem="Uwn-iM-UCh" firstAttribute="width" secondItem="JaP-BD-nO1" secondAttribute="width" id="izv-pI-47Z"/>
                             <constraint firstItem="Uwn-iM-UCh" firstAttribute="centerX" secondItem="JaP-BD-nO1" secondAttribute="centerX" id="wfW-sf-Y7B"/>
                         </constraints>
@@ -1063,7 +1064,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1396" y="36"/>
+            <point key="canvasLocation" x="1359" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lDa-eu-wMQ">
@@ -1092,6 +1093,7 @@
         <image name="back" width="9" height="16"/>
         <image name="big_heart" width="128" height="112"/>
         <image name="facebook" width="30" height="29"/>
+        <image name="home" width="245" height="229"/>
         <image name="icon_logout" width="100" height="100"/>
         <image name="icon_menu" width="24" height="24"/>
         <image name="like" width="28" height="24"/>

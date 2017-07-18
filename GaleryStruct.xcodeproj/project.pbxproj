@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E20FAF66BF01A9597832685 /* Pods_GaleryStruct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146A6A8B5D942245F6F778E6 /* Pods_GaleryStruct.framework */; };
 		293D9CD51F08122A003C0A92 /* MuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */; };
 		29C017901F0698A60070950A /* WorkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */; };
 		29DED7751F1CB2FC00F8EBE3 /* MapPointGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */; };
 		29DED7791F1E0A4000F8EBE3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DED7781F1E0A4000F8EBE3 /* SWRevealViewController.m */; };
 		29DED77C1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED77B1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift */; };
+		29FE0D811F1E6AE100B09E8D /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE0D801F1E6AE100B09E8D /* FacebookManager.swift */; };
 		D0388C121EDCCE8D00190852 /* SearchMethodsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */; };
 		D06363211ED9ABFA009CF372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06363201ED9ABFA009CF372 /* AppDelegate.swift */; };
 		D063632B1ED9ABFA009CF372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06363291ED9ABFA009CF372 /* LaunchScreen.storyboard */; };
@@ -32,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146A6A8B5D942245F6F778E6 /* Pods_GaleryStruct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaleryStruct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsViewController.swift; sourceTree = "<group>"; };
 		29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPointGallery.swift; path = ../../../MapPointGallery.swift; sourceTree = "<group>"; };
@@ -39,11 +42,15 @@
 		29DED7771F1E0A4000F8EBE3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		29DED7781F1E0A4000F8EBE3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		29DED77B1F1E0CFE00F8EBE3 /* ClientMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMenuTableViewController.swift; sourceTree = "<group>"; };
+		29FE0D801F1E6AE100B09E8D /* FacebookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		29FE0D821F1E6C8600B09E8D /* GaleryStruct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = GaleryStruct.entitlements; path = GaleryStruct/GaleryStruct.entitlements; sourceTree = "<group>"; };
+		2A4D042D173DFB8A8D6C24CB /* Pods-GaleryStruct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaleryStruct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GaleryStruct/Pods-GaleryStruct.debug.xcconfig"; sourceTree = "<group>"; };
 		49A91034B3E042D006D914E1 /* Pods_GaleryStruct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaleryStruct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		655023E290FC6A11D7A2FFD5 /* Pods-GaleryStruct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaleryStruct.release.xcconfig"; path = "Pods/Target Support Files/Pods-GaleryStruct/Pods-GaleryStruct.release.xcconfig"; sourceTree = "<group>"; };
+		AAF3817599BA1142A66EC5CB /* Pods-GaleryStruct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaleryStruct.release.xcconfig"; path = "Pods/Target Support Files/Pods-GaleryStruct/Pods-GaleryStruct.release.xcconfig"; sourceTree = "<group>"; };
 		D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMethodsProtocol.swift; path = ../SearchMethodsProtocol.swift; sourceTree = "<group>"; };
 		D063631D1ED9ABFA009CF372 /* GaleryStruct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaleryStruct.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D06363201ED9ABFA009CF372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D06363201ED9ABFA009CF372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GaleryStruct/AppDelegate.swift; sourceTree = "<group>"; };
 		D063632A1ED9ABFA009CF372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D063632C1ED9ABFA009CF372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D06536AF1EE3EAED000836AA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83FFA08349F54CD7C7EAEA5 /* Pods_GaleryStruct.framework in Frameworks */,
+				1E20FAF66BF01A9597832685 /* Pods_GaleryStruct.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,14 +112,34 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		415A2CE7C29FEFBF777D9EE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A4D042D173DFB8A8D6C24CB /* Pods-GaleryStruct.debug.xcconfig */,
+				AAF3817599BA1142A66EC5CB /* Pods-GaleryStruct.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46B797C8CD157829E00DE5B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				146A6A8B5D942245F6F778E6 /* Pods_GaleryStruct.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D06363141ED9ABFA009CF372 = {
 			isa = PBXGroup;
 			children = (
+				29FE0D821F1E6C8600B09E8D /* GaleryStruct.entitlements */,
 				D06536AE1EE3EA92000836AA /* ViewControllers */,
 				D0B14A1F1EDF2C1500074176 /* VO */,
 				D0B14A1E1EDF2BB600074176 /* API */,
 				29DED77A1F1E0A4A00F8EBE3 /* SWRevealViewController */,
 				D063631F1ED9ABFA009CF372 /* smth another */,
+				415A2CE7C29FEFBF777D9EE9 /* Pods */,
+				46B797C8CD157829E00DE5B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +167,7 @@
 		D06536AE1EE3EA92000836AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D06363201ED9ABFA009CF372 /* AppDelegate.swift */,
 				D08D0CCD1EF3B5F800742954 /* View */,
 				D06536AF1EE3EAED000836AA /* LoadingViewController.swift */,
 				D06536BA1EE41B96000836AA /* Main.storyboard */,
@@ -175,6 +204,7 @@
 			children = (
 				D08357C91EFDA3FF00DF31D2 /* alamofireDownloadJSON.swift */,
 				D0388C111EDCCE8D00190852 /* SearchMethodsProtocol.swift */,
+				29FE0D801F1E6AE100B09E8D /* FacebookManager.swift */,
 			);
 			name = API;
 			path = GaleryStruct/API;
@@ -199,7 +229,6 @@
 				D06363291ED9ABFA009CF372 /* LaunchScreen.storyboard */,
 				D0A056041EFE89A700880424 /* Assets.xcassets */,
 				D063632C1ED9ABFA009CF372 /* Info.plist */,
-				D06363201ED9ABFA009CF372 /* AppDelegate.swift */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -242,6 +271,11 @@
 						DevelopmentTeam = 7ZBZB7WTZS;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -345,6 +379,7 @@
 				29DED7791F1E0A4000F8EBE3 /* SWRevealViewController.m in Sources */,
 				D06536B71EE40243000836AA /* ExhibitionsDetailsViewController.swift in Sources */,
 				D06536B01EE3EAED000836AA /* LoadingViewController.swift in Sources */,
+				29FE0D811F1E6AE100B09E8D /* FacebookManager.swift in Sources */,
 				D0D17DD21EE1976800749F37 /* WorksVO.swift in Sources */,
 				D08357CA1EFDA3FF00DF31D2 /* alamofireDownloadJSON.swift in Sources */,
 			);
@@ -471,11 +506,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GaleryStruct/GaleryStruct.entitlements;
 				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = GaleryStruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pasha..GaleryStruct;
+				PRODUCT_BUNDLE_IDENTIFIER = pasha.GaleryStruct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GaleryStruct/GaleryStruct-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -489,11 +525,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GaleryStruct/GaleryStruct.entitlements;
 				DEVELOPMENT_TEAM = 7ZBZB7WTZS;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = GaleryStruct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pasha..GaleryStruct;
+				PRODUCT_BUNDLE_IDENTIFIER = pasha.GaleryStruct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GaleryStruct/GaleryStruct-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

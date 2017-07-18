@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class LoadingViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var slideScrollView: UIScrollView!
@@ -14,6 +15,8 @@ class LoadingViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    var loginSuccessful = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,26 @@ class LoadingViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if (FBSDKAccessToken.current() != nil && loginSuccessful == true) {
+            performSegue(withIdentifier: "ClientView", sender: self)
+        }
+    }
+    
+    @IBAction func fbLoginButon(_ sender: UIButton) {
+        if FBSDKAccessToken.current() != nil {
+            self.loginSuccessful = true
+            self.viewDidAppear(true)
+        } else {
+            FacebookManager.shared.logIn(withPublishPermissions: ["public_profile", "email"], from: self, handler: { (result, error) in
+                if error == nil {
+                    self.loginSuccessful = true
+                    self.viewDidAppear(true)
+                }
+            })
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
