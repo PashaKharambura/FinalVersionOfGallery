@@ -14,12 +14,25 @@ class LoadingViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var connectingButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loginFacebook: UIButton!
+    @IBOutlet weak var logoutFacebook: UIButton!
+    
     
     var loginSuccessful = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if FBSDKAccessToken.current() != nil {
+            logoutFacebook.isHidden = false
+            FacebookManager.getUserData(completion: { 
+                self.loginFacebook.setTitle("Continiue as \(String(describing: User.currentUser.name!))", for: .normal)
+               // self.logoutFacebook.setTitle("Log out \(String(describing: User.currentUser.name!))", for: .normal)
+            })
+        } else {
+            logoutFacebook.isHidden = true
+        }
+        
         slideScrollView.delegate = self
         connectingButton.layer.cornerRadius = 10
         let slides:[Slide] = createSlides()
@@ -28,6 +41,13 @@ class LoadingViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
     }
 
+    @IBAction func facebookLogoutButton(_ sender: UIButton) {
+        FacebookManager.shared.logOut()
+        User.currentUser.resetUser()
+       logoutFacebook.isHidden = true
+        loginFacebook.setTitle("Login with Facebook", for: .normal)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         if (FBSDKAccessToken.current() != nil && loginSuccessful == true) {
             performSegue(withIdentifier: "ClientView", sender: self)
@@ -41,11 +61,15 @@ class LoadingViewController: UIViewController, UIScrollViewDelegate {
         } else {
             FacebookManager.shared.logIn(withReadPermissions: ["public_profile", "email"], from: self, handler: { (result, error) in
                 if error == nil {
-                    self.loginSuccessful = true
-                    self.viewDidAppear(true)
+                    FacebookManager.getUserData(completion: { 
+                        self.loginSuccessful = true
+                        self.viewDidAppear(true)
+                    })
+                    
                 }
             })
         }
+    self.logoutFacebook.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

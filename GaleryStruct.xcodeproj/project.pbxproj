@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E20FAF66BF01A9597832685 /* Pods_GaleryStruct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146A6A8B5D942245F6F778E6 /* Pods_GaleryStruct.framework */; };
 		293D9CD51F08122A003C0A92 /* MuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */; };
+		296A66FA1F1E945700BAAB16 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A66F91F1E945700BAAB16 /* UserModel.swift */; };
 		29C017901F0698A60070950A /* WorkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */; };
 		29DED7751F1CB2FC00F8EBE3 /* MapPointGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */; };
 		29DED7791F1E0A4000F8EBE3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DED7781F1E0A4000F8EBE3 /* SWRevealViewController.m */; };
@@ -40,6 +41,7 @@
 		146A6A8B5D942245F6F778E6 /* Pods_GaleryStruct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaleryStruct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuCollectionViewCell.swift; sourceTree = "<group>"; };
 		296A66F81F1E82F800BAAB16 /* GaleryStruct.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = GaleryStruct.entitlements; sourceTree = "<group>"; };
+		296A66F91F1E945700BAAB16 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = ../../../UserModel.swift; sourceTree = "<group>"; };
 		29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsViewController.swift; sourceTree = "<group>"; };
 		29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPointGallery.swift; path = ../../../MapPointGallery.swift; sourceTree = "<group>"; };
 		29DED7761F1E0A3F00F8EBE3 /* GaleryStruct-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GaleryStruct-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -133,6 +135,9 @@
 		46B797C8CD157829E00DE5B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29FE0D831F1E7ED200B09E8D /* FBSDKShareKit.framework */,
+				29FE0D841F1E7ED200B09E8D /* FBSDKCoreKit.framework */,
+				29FE0D851F1E7ED200B09E8D /* FBSDKLoginKit.framework */,
 				146A6A8B5D942245F6F778E6 /* Pods_GaleryStruct.framework */,
 			);
 			name = Frameworks;
@@ -186,9 +191,6 @@
 				D06536B61EE40243000836AA /* ExhibitionsDetailsViewController.swift */,
 				29C0178F1F0698A60070950A /* WorkDetailsViewController.swift */,
 				293D9CD41F08122A003C0A92 /* MuCollectionViewCell.swift */,
-				29FE0D831F1E7ED200B09E8D /* FBSDKShareKit.framework */,
-				29FE0D841F1E7ED200B09E8D /* FBSDKCoreKit.framework */,
-				29FE0D851F1E7ED200B09E8D /* FBSDKLoginKit.framework */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +231,7 @@
 				D0B14A201EDF2C5700074176 /* ExibitionVO.swift */,
 				D0B14A2B1EDF3F1000074176 /* GalleryVO.swift */,
 				D0D17DD11EE1976800749F37 /* WorksVO.swift */,
+				296A66F91F1E945700BAAB16 /* UserModel.swift */,
 				29DED7741F1CB2FC00F8EBE3 /* MapPointGallery.swift */,
 			);
 			name = VO;
@@ -391,6 +394,7 @@
 				29DED7791F1E0A4000F8EBE3 /* SWRevealViewController.m in Sources */,
 				D06536B71EE40243000836AA /* ExhibitionsDetailsViewController.swift in Sources */,
 				D06536B01EE3EAED000836AA /* LoadingViewController.swift in Sources */,
+				296A66FA1F1E945700BAAB16 /* UserModel.swift in Sources */,
 				29FE0D811F1E6AE100B09E8D /* FacebookManager.swift in Sources */,
 				D0D17DD21EE1976800749F37 /* WorksVO.swift in Sources */,
 				D08357CA1EFDA3FF00DF31D2 /* alamofireDownloadJSON.swift in Sources */,
