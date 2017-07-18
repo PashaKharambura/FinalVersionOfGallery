@@ -39,7 +39,7 @@ class LoadingViewController: UIViewController, UIScrollViewDelegate {
             self.loginSuccessful = true
             self.viewDidAppear(true)
         } else {
-            FacebookManager.shared.logIn(withPublishPermissions: ["public_profile", "email"], from: self, handler: { (result, error) in
+            FacebookManager.shared.logIn(withReadPermissions: ["public_profile", "email"], from: self, handler: { (result, error) in
                 if error == nil {
                     self.loginSuccessful = true
                     self.viewDidAppear(true)
