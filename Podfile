@@ -11,5 +11,12 @@ target 'GaleryStruct' do
   pod 'SDWebImage', '~> 4.0'
   pod 'ObjectMapper', '~> 2.2'
   pod 'AlamofireObjectMapper', '~> 4.1'
+pod 'FacebookCore', '~> 0.2'
+pod 'FacebookLogin', '~> 0.2'
+pod 'FacebookShare', '~> 0.2'
+pod 'FBSDKCoreKit', '~> 4.22.1'
+pod 'FBSDKLoginKit', '~> 4.22.1'
+pod 'FBSDKShareKit', '~> 4.22.1'
+  pod ‘SwiftyJSON’
 
 end
